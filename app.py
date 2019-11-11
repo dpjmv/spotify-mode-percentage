@@ -116,7 +116,7 @@ def getAudioFeatures(sp, tracks):
 
 def main():
     # PLaylists to analyse, they have to be among your saved playlists
-    playlist_names = ["Rock", "Rap"]
+    playlist_names = ["Ω"]
 
     # Retrieve username
     username = os.getenv("SPFY_MODE_USERNAME")
