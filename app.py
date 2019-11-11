@@ -93,7 +93,6 @@ def getPlaylists(sp, username, offset=0):
 
 def getPlaylistsByName(sp, username, playlist_names):
     playlists = []
-
     for playlist in getPlaylists(sp, username):
         if playlist["name"] in playlist_names:
             playlists.append(playlist)
@@ -117,7 +116,7 @@ def getAudioFeatures(sp, tracks):
 
 def main():
     # PLaylists to analyse, they have to be among your saved playlists
-    playlist_names = ["Rock, Rap"]
+    playlist_names = ["Rock", "Rap"]
 
     # Retrieve username
     username = os.getenv("SPFY_MODE_USERNAME")
